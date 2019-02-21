@@ -29,7 +29,7 @@
   }
 
   var css = ".inline {\n    color: red;\n}";
-  var style = {"inline":"inline"};
+  var style = {"inline-left":"inline","inline-right":"inline"};
   styleInject(css);
 
   console.log(style);

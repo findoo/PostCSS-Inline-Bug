@@ -4,7 +4,7 @@ import postCssPresetEnv from "postcss-preset-env";
 export default {
   input: "src/main.js",
   output: {
-    file: "public/bundle.js",
+    file: "public/bundle-bug.js",
     format: "iife"
   },
   plugins: [
@@ -12,7 +12,7 @@ export default {
       modules: {
         generateScopedName: `[local]`
       },
-      plugins: []
+      plugins: [postCssPresetEnv]
     })
   ]
 };
